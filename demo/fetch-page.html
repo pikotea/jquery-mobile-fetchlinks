@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>サンプル</title>
+  <link rel="stylesheet"  href="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.css" />  
+  <link rel="stylesheet" href="_assets/css/jqm-docs.css"/>
+  <link rel="stylesheet"  href="../jquery.mobile.fetchlinks.css" />  
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="_assets/js/jqm-docs.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.js"></script>
+  <script src="../jquery.mobile.fetchlinks.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="content">
+    <style>
+    #hoge .ui-page {
+      display: block;
+      position: static;
+    }
+    </style>
+    <h2>Fetch Page</h2>
+    <p>
+      Click button to fetch page. (If window width < 600, normal links.)
+    </p>
+    <a href="page.html" data-target="#hoge" data-fragment=":jqmData(role=page)" data-role="button" data-breakpoint="600">page.html</a>
+    
+    <div id="hoge">
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

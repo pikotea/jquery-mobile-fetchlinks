@@ -1,0 +1,22 @@
+/*
+* FetchLinks Plugin
+* Copyright 2012, Toru Yoshikawa
+* Dual licensed under the MIT or GPL Version 2 licenses.
+*
+* Changes jquery.mobile.core.css in jQuery Mobile
+* http://jquerymobile.com/
+* 
+* Copyright 2011 (c) jQuery Project
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* http://jquery.org/license
+*/
+.ui-loading-inline {
+  min-height: 46px;
+  position: relative;
+}
+.ui-loading-inline .ui-loader {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>jQuery Mobile Framework</title> 
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.css" />  
+	<link rel="stylesheet" href="_assets/css/jqm-docs.css"/>
+	<link rel="stylesheet"  href="../jquery.mobile.fetchlinks.css" />  
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="_assets/js/jqm-docs.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.js"></script>
+	<script src="../jquery.mobile.fetchlinks.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page">
+		<div data-role="content">  
+			<style>
+				#quote-viewer { padding: 10px 20px 10px 10px; position: relative; }
+				#quote-viewer blockquote { font-size:1.8em; font-family:Georgia, Serif; margin:0.3em; line-height:125%; }
+				#quote-viewer em { display: block; text-align: right; margin:1.2em 10%; opacity:0.5; font-size:1.1em; text-transform:uppercase; } 
+				#quote-viewer p { margin:2px 6px; color:#999; }
+				#quote-viewer .quote-close { position: absolute; top: 0; right: 0;}
+				
+				.pix-wrapper p {  }
+				.pix-wrapper .pix-nav { float:left; opacity:0.85; }
+			</style>
+
+			<h2>Quotes</h2>
+			<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+				<li><a href="quote-1.html" data-role="button" data-target="#quote-viewer" data-fragment="[data-role='content']" data-transition="pop">Eames</a></li>
+				<li><a href="quote-2.html" data-role="button" data-target="#quote-viewer" data-fragment="[data-role='content']">Rams</a></li>
+				<li><a href="quote-3.html" data-role="button" data-target="#quote-viewer" data-fragment="[data-role='content']">Banksy</a></li>
+				<li><a href="quote-4.html" data-role="button" data-target="#quote-viewer" data-fragment="[data-role='content']">Picasso</a></li>
+			</ul>
+			</ul>
+			<div id="quote-viewer" class="ui-body-d ui-corner-all">
+				<p id="quote-intro">Click a fetch link above for a snazzy quote...</p>
+			</div>
+			
+			<h2>Simple photo viewer</h2>
+			<p>Here, the target of the link is the parent.</p>
+			<div id="pix-target">
+				<a href="pix-1.html" data-role="button" data-target="#pix-target" data-fragment=".pix-wrapper" id="pix-link">Start slideshow</a>
+			</div>
+
+		</div><!-- /content -->
+	</div><!-- /page -->
+	
+	
+</body>
+</html>

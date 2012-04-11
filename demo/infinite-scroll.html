@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>jQuery Mobile Framework - Dialog Example</title> 
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.css" />  
+	<link rel="stylesheet" href="_assets/css/jqm-docs.css"/>
+	<link rel="stylesheet"  href="../jquery.mobile.fetchlinks.css" />  
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="_assets/js/jqm-docs.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.js"></script>
+	<script src="../jquery.mobile.fetchlinks.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page">
+		<div data-role="content">  
+			<h2>Infinite Scroll</h2>
+
+			<ul data-role="listview" data-inset="true" class="infinite">
+				<li><a href="index.html"><img src="lists/images/gf.png" alt="France" class="ui-li-icon">France <span class="ui-li-count">4</span></a></li>
+				<li><a href="index.html"><img src="lists/images/de.png" alt="Germany" class="ui-li-icon">Germany <span class="ui-li-count">4</span></a></li>
+				<li><a href="index.html"><img src="lists/images/gb.png" alt="Great Britain" class="ui-li-icon">Great Britain <span class="ui-li-count">0</span></a></li>
+				<li><a href="index.html"><img src="lists/images/fi.png" alt="Finland" class="ui-li-icon">Finland <span class="ui-li-count">12</span></a></li>
+				<li><a href="index.html"><img src="lists/images/sj.png" alt="Norway" class="ui-li-icon">Norway <span class="ui-li-count">328</span></a></li>
+				<li><a href="index.html"><img src="lists/images/us.png" alt="United States" class="ui-li-icon">United States <span class="ui-li-count">62</span></a></li>
+				
+			</ul>
+			
+			<a href="lists-icons.html" data-role="button" data-method="append" data-target=".infinite" data-fragment=".content-primary [data-role='listview'] li">Load More&hellip;</a>
+			
+		</div><!-- /content -->
+	</div><!-- /page -->
+	
+	
+</body>
+</html>

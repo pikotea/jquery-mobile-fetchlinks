@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>jQuery Mobile Docs - Anatomy of a Page</title> 
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.css" />  
+	<link rel="stylesheet" href="_assets/css/jqm-docs.css"/>
+	<link rel="stylesheet"  href="../jquery.mobile.fetchlinks.css" />  
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="_assets/js/jqm-docs.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.js"></script>
+	<script src="../jquery.mobile.fetchlinks.js"></script>
+</head> 
+<body> 
+
+	<div data-role="page" class="type-interior">
+
+		<div data-role="header" data-theme="f">
+		<h1>Fetchlink Demos</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div class="content-primary">
+		<p>Fetchlinks! Man. What <em>can’t</em> they do?</p>
+
+		<div data-role="controlgroup" data-target=".target" data-fragment="[data-role='content']">
+			<a href="fetch-tabs.html" data-role="button">Tabs</a>
+			<a href="pix-2.html" data-role="button">Demo 2</a>
+			<a href="pix-3.html" data-role="button">Demo 3</a>
+		</div>
+		
+		<a href="fetch-tabs.html" data-role="fetchlink" data-target=".target">Demo 1</a>
+
+		<div class="target">
+			
+		</div>
+
+				</div><!--/content-primary -->		
+
+				<div class="content-secondary">
+
+					<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+
+							<h3>More in this section</h3>
+
+							<ul data-role="listview" data-theme="c" data-dividertheme="d">
+
+								<li>Demos</li>
+								<li><a href="fetch-tabs.html">Fetch Tabs</a></li>
+								<li><a href="infinite-scroll.html">Infinite Scroll</a>
+								<li><a href="fetch-page.html">Fetch Page</a>
+								
+								<!-- <li><a href="pix-1.html">Pix 1</a></li>
+								<li><a href="pix-2.html">Pix 2</a></li>
+								<li><a href="pix-3.html">Pix 3</a></li>
+								<li><a href="pix-4.html">Pix 4</a></li>
+								<li><a href="pix-5.html">Pix 5</a></li>
+								<li><a href="pix-6.html">Pix 6</a></li>
+							
+								<li><a href="quote-1.html">Quote 1</a></li>
+								<li><a href="quote-2.html">Quote 2</a></li>
+								<li><a href="quote-3.html">Quote 3</a></li>
+								<li><a href="quote-4.html">Quote 4</a></li> -->
+							</ul>
+					</div>
+				</div>		
+
+			</div><!-- /content -->
+
+			<div data-role="footer" class="footer-docs" data-theme="c">
+					<p>&copy; 2011 The jQuery Project</p>
+			</div>
+
+			</div><!-- /page -->
+
+			</body>
+			</html>
